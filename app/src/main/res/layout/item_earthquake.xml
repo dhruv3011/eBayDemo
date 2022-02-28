@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/viewSpacing_8dp"
+        android:elevation="@dimen/viewSpacing_8dp"
+        app:cardBackgroundColor="@color/item_bg"
+        app:cardCornerRadius="@dimen/viewSpacing_8dp">
+
+        <LinearLayout
+            android:id="@+id/llItemLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_12dp">
+
+            <TextView
+                android:id="@+id/tvLatLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:id="@+id/tvMagnitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
